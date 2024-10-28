@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Kuupäeva ja ajaga seotud info
+
+echo " "
+date +"Täna on %A, %B %d, %Y"
+date +"Kell on %H:%M"
+echo " "
+date +"%B %Y kalender"
+
+cal | tail -n 7
+
+
