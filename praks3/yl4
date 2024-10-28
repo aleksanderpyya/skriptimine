@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo -n "Sisestage reisijate arv: "
+read reisijad
+
+echo -n "Sisestage kohtade arv: "
+read kohad
+
+echo -n "Täielikult täidetud bussis on: "
+echo "$kohad reisijat" 
+
+mahaj22nud=`echo "$kohad-$reisijad" | bc`
+echo -n "Bussist on maha jäänud: "
+echo "$mahaj22nud reisijat"
