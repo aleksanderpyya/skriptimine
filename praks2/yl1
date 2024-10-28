@@ -1,7 +1,18 @@
 #!/bin/bash
 
-echo -n "Tere, "
+user1=alekskript
+user2=oliver
 
-whoami
+if grep $user1 /etc/passwd; then
 
-echo "!"
+	echo -n "Tere, $USER "
+
+	echo "!"
+
+elif grep $user2 /etc/passwd; then
+
+	echo "Tere, $user2 "
+
+	echo "!"
+
+fi
